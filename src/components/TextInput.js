@@ -1,9 +1,14 @@
 import SubscribeButton from "./SubscribeButton";
 
 const TextInput = (placeHolderText) => {
+    
+    const isInputEmail = (emailInput) => {
+        const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    }
 
     const handleChange = (e) => {
-        console.log(e.target.value);
+        const email = e.target.value;
+        isInputEmail(email);
     }
 
     const buttonText = "Subscribe to monthly newsletter";
