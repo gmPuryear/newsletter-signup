@@ -20,14 +20,14 @@ const TextInput = (placeHolderText) => {
 
     return (
         <>
-        <p>
-            Email Address
+        <ul className="input_label_err_msg">
+            <li>Email Address</li>
             {
             !isAnEmail
             &&
-            <p>Valid email required</p>
+            <li className="email_err_msg">Valid email required</li>
             }
-        </p>
+        </ul>
         <input className={isAnEmail ? "good_email" : "bad_email"} placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
         <SubscribeButton buttonText= {buttonText}/>
         </>
