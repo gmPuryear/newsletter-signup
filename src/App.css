@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.good_email:focus {
+  background-color: green;
+}
+
+.bad_email:focus {
+  background-color: red;
+}

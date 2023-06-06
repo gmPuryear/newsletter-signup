@@ -1,10 +1,9 @@
 const SubscribeButton = (buttonText) => {
-    console.log(buttonText);
 
 return (
     <>
-        <button>{buttonText.buttonText}</button>
+        <button type="submit">{buttonText.buttonText}</button>
     </>
-)
+    )
 }
 export default SubscribeButton;
