@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import SubscribeButton from "./SubscribeButton";
 
 const TextInput = (placeHolderText) => {
-    const [isAnEmail, setIsAnEmail] = useState(false);
+    const [isAnEmail, setIsAnEmail] = useState('');
 
     const handleChange = (e) => {
         const email = e.target.value;

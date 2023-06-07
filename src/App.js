@@ -2,6 +2,7 @@ import './App.css';
 import TextInput from './components/TextInput';
 
 function App() {
+  
 
   const placeHolderText = "email@company.com";
 
@@ -16,9 +17,8 @@ Join 60,000+ product managers receiving monthly updates on:
 Product discovery and building what matters
 Measuring to ensure updates are a success
 And much more!
-
  
-<TextInput placeHolderText = {placeHolderText}/>
+<TextInput placeHolderText= {placeHolderText}/>
 
 {/* <!-- Sign-up form end --> */}
 
