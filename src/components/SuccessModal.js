@@ -1,4 +1,4 @@
-const SuccessModal = ({setOpenSuccessModal}) => {
+const SuccessModal = () => {
 
     return (
         <div>
@@ -8,7 +8,7 @@ const SuccessModal = ({setOpenSuccessModal}) => {
 A confirmation email has been sent to ash@loremcompany.com. 
 Please open it and click the button inside to confirm your subscription.
 
-Dismiss message
+<button>Dismiss message</button>
 
 {/* <!-- Success message end --> */}
         </div>

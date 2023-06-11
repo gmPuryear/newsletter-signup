@@ -1,10 +1,10 @@
 import {useContext, useEffect, useState} from "react";
-import SubscribeButton from "./SubscribeButton";
 import { userEmailContext } from "../App";
+import SuccessModal from "./SuccessModal";
 
-const TextInput = (placeHolderText) => {
-    const [userEmail, setUserEmail] = useContext(userEmailContext);
-    const [isAnEmail, setIsAnEmail] = useState('');
+const UserEmailInput = (placeHolderText) => {
+    const [isAnEmail, setIsAnEmail] = useState(false);
+    const [toggleSuccessModal, setToggleSuccessModal] = useState(false);
 
     const handleChange = (e) => {
         const email = e.target.value;
@@ -13,11 +13,15 @@ const TextInput = (placeHolderText) => {
 
     const isInputEmail = (emailInput) => {
         const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-        setIsAnEmail(emailPattern.test(emailInput));
-        setUserEmail(emailInput);            
-         }
-    
-    
+        setIsAnEmail(emailPattern.test(emailInput));           
+    }
+
+    const openSuccessModal = () => {
+        if (isAnEmail) {
+            setToggleSuccessModal(true);
+        }
+    }
+
     const buttonText = "Subscribe to monthly newsletter";
 
     return (
@@ -31,8 +35,13 @@ const TextInput = (placeHolderText) => {
             }
         </ul>
         <input className={isAnEmail ? "good_email" : "bad_email"} placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
-        <SubscribeButton buttonText= {buttonText}/>
+        <button onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
+        {
+            toggleSuccessModal
+            &&
+            <SuccessModal/>
+        }
         </>
     )
 }
-export default TextInput;
+export default UserEmailInput;
