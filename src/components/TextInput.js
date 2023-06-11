@@ -1,7 +1,9 @@
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import SubscribeButton from "./SubscribeButton";
+import { userEmailContext } from "../App";
 
 const TextInput = (placeHolderText) => {
+    const [userEmail, setUserEmail] = useContext(userEmailContext);
     const [isAnEmail, setIsAnEmail] = useState('');
 
     const handleChange = (e) => {
@@ -11,8 +13,8 @@ const TextInput = (placeHolderText) => {
 
     const isInputEmail = (emailInput) => {
         const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-        const isEmail = emailPattern.test(emailInput);
-        setIsAnEmail(isEmail);            
+        setIsAnEmail(emailPattern.test(emailInput));
+        setUserEmail(emailInput);            
          }
     
     
