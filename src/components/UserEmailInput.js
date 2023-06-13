@@ -5,10 +5,12 @@ import SuccessModal from "./SuccessModal";
 const UserEmailInput = (placeHolderText) => {
     const [isAnEmail, setIsAnEmail] = useState(false);
     const [toggleSuccessModal, setToggleSuccessModal] = useState(false);
+    const [userEmail, setUserEmail] = useState('');
 
     const handleChange = (e) => {
         const email = e.target.value;
         isInputEmail(email);
+        setUserEmail(email);
     }
 
     const isInputEmail = (emailInput) => {
@@ -39,7 +41,7 @@ const UserEmailInput = (placeHolderText) => {
         {
             toggleSuccessModal
             &&
-            <SuccessModal/>
+            <SuccessModal userEmail={userEmail}/>
         }
         </>
     )

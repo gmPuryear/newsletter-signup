@@ -1,11 +1,12 @@
-const SuccessModal = () => {
+const SuccessModal = (userEmail) => {
+    console.log(userEmail);
 
     return (
         <div>
             {/* <!-- Success message start --> */}
             Thanks for subscribing!
 
-A confirmation email has been sent to ash@loremcompany.com. 
+A confirmation email has been sent to {userEmail.userEmail}. 
 Please open it and click the button inside to confirm your subscription.
 
 <button>Dismiss message</button>
