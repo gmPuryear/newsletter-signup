@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+:root {
+  --global-font-size: 1.3rem;
+}
+
 body {
   margin: 0px;
 }
@@ -76,4 +80,22 @@ img {
 .content_container {
   display: flex;
   flex-direction: column;
+}
+
+.content_container {
+  font-size: var(--global-font-size);
+  padding-left: 1.875rem;
+  text-align: start;
+}
+
+.benefits_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits_list li {
+  background: url('./Images/icon-list.svg') no-repeat;
+  padding-left: 1.875rem;
+  line-height: 1.4;
 }

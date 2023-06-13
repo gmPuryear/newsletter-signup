@@ -8,20 +8,25 @@ function App() {
 
   return (
     <div className="App">
-      
       <img className='mobile_banner' src={mobileBanner} alt='email banner'/>
-
       
-
       {/* <!-- Sign-up form start --> */}
       <div className='content_container'>
-      <h1>Stay updated!</h1>
+        <h1>Stay updated!</h1>
+        <div>
 
-Join 60,000+ product managers receiving monthly updates on:
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-Product discovery and building what matters
-Measuring to ensure updates are a success
-And much more!
+          <ul className='benefits_list'>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+            
+      </div>
+
+
+
  
 <UserEmailInput placeHolderText = {placeHolderText}/>
   {/* <SuccessModal/> */}
