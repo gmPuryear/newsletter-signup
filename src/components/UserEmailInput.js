@@ -29,20 +29,23 @@ const UserEmailInput = (placeHolderText) => {
     return (
         <>
             <ul className="input_label_err_msg">
-                <li>Email Address</li>
-                {
-                !isAnEmail
-                &&
-                <li className="email_err_msg">Valid email required</li>
-                }
+                    {
+                    !isAnEmail
+                    &&
+                    <li className="email_err_msg">Valid email required</li>
+                    }
             </ul>
-            <input className={isAnEmail ? "good_email" : "bad_email"} placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
-            <button onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
-            {
-                toggleSuccessModal
-                &&
-                <SuccessModal userEmail={userEmail}/>
-            }
+
+                <div className="input_and_btn">
+                <b><label for="emailInput">Email address</label></b>
+                <input className={isAnEmail ? "good_email" : "bad_email"} name="emailInput" placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
+                <button onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
+                {
+                    toggleSuccessModal
+                    &&
+                    <SuccessModal userEmail={userEmail}/>
+                }
+            </div>
         </>
     )
 }
