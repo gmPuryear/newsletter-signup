@@ -31,11 +31,14 @@ body {
 }
 
 .good_email:focus {
-  background-color: green;
+  background-color: hsl(138, 71%, 45%, 30%);
+  color:hsl(138, 71%, 45%, 100%);
+  outline: none;
 }
 
 .bad_email:focus {
-  background-color: red;
+  outline: none;
+  background-color: hsl(7, 73%, 88%);
   margin: 0;
 }
 
@@ -47,7 +50,7 @@ body {
   justify-content: space-between;
 }
 
-.email_err_msg:focus {
+.email_err_msg {
   color: red;
 }
 
@@ -70,7 +73,7 @@ img {
 
 .content_container {
   font-size: var(--global-font-size);
-  padding-left: 1.875rem;
+  padding: 0 1.875rem 0 1.875rem;
   text-align: start;
 }
 
@@ -94,13 +97,33 @@ img {
 
 input {
   margin-top: 0.5rem;
-  padding: .8rem;
+  padding: .9rem;
+  border-radius: .5rem;
+  border-color: hsl(234, 7%, 73%);
+  border-width: .06rem;
+  border-style: solid;
 }
 
 label {
   font-size: 0.9rem;
   color: hsl(235, 18%, 26%);
   margin: 0;
+}
+
+.subscribe_button {
+  margin-top: 1.2rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(235, 18%, 26%);
+  padding: .9rem;
+  border-radius: .5rem;
+}
+
+.stay_updated_header {
+  margin-bottom: 0;
+} 
+
+.input::placeholder {
+  color: hsl(234, 7%, 73%);
 }
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
