@@ -1,17 +1,25 @@
-const SuccessModal = (userEmail, ) => {
-    console.log(userEmail, toggleSuccessModal, setToggleSuccessModal);
+import { useEffect } from "react";
+
+const SuccessModal = (props) => {
+        const {
+        userEmail,
+        toggleSuccessModal,
+        setToggleSuccessModal
+    } = props
 
     return (
         <div>
             {/* <!-- Success message start --> */}
             Thanks for subscribing!
 
-A confirmation email has been sent to {userEmail.userEmail}. 
+A confirmation email has been sent to {userEmail}. 
 Please open it and click the button inside to confirm your subscription.
 
-<button>Dismiss message</button>
+<button onClick={() => setToggleSuccessModal(false)}>Dismiss message</button>
 
 {/* <!-- Success message end --> */}
+
+
         </div>
     )
 

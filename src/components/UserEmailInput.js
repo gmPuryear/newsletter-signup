@@ -63,7 +63,7 @@ const UserEmailInput = (placeHolderText) => {
                 {
                     toggleSuccessModal
                     &&
-                    <SuccessModal userEmail={userEmail}/>
+                    <SuccessModal userEmail= {userEmail} toggleSuccessModal= {toggleSuccessModal} setToggleSuccessModal= {setToggleSuccessModal}/>
                 }
             </div>
         </>

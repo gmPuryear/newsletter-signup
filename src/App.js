@@ -29,7 +29,6 @@ function App() {
 
  
 <UserEmailInput placeHolderText = {placeHolderText}/>
-  {/* <SuccessModal/> */}
 
 {/* <!-- Sign-up form end --> */}
 </div>
