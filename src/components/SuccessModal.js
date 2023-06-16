@@ -1,5 +1,5 @@
-const SuccessModal = (userEmail) => {
-    console.log(userEmail);
+const SuccessModal = (userEmail, ) => {
+    console.log(userEmail, toggleSuccessModal, setToggleSuccessModal);
 
     return (
         <div>

@@ -50,21 +50,13 @@ body {
   /* justify-content: space-between; */
 /* } */ */
 
-.label_errorMsg {
-  /* display: flex; */
-}
-
 .email_err_msg {
-  color: red;
-  font-size: 0.9rem !important;
+  color: blue;
+  font-size: 0.9rem;
 }
 
 button {
   cursor: pointer;
-}
-
-img {
-  height: 100%
 }
 
  .mobile_banner {
@@ -97,6 +89,7 @@ img {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
+  color: red;
 }
 
 input, input:focus {
@@ -106,6 +99,7 @@ input, input:focus {
   border-color: hsl(234, 7%, 73%);
   border-width: .06rem;
   border-style: solid;
+  outline: none;
 }
 
 .subscribe_button {
@@ -124,9 +118,11 @@ input, input:focus {
   color: hsl(234, 7%, 73%);
 }
 
-.label_and_error {
+.label_errorMsg {
   display: flex;
+  justify-content: space-between;
   font-size: 0.9rem !important;
+  margin: 0;
 }
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)

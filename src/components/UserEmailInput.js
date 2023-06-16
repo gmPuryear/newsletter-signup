@@ -3,7 +3,7 @@ import { userEmailContext } from "../App";
 import SuccessModal from "./SuccessModal";
 
 const UserEmailInput = (placeHolderText) => {
-    const [isAnEmail, setIsAnEmail] = useState(false);
+    const [isAnEmail, setIsAnEmail] = useState('');
     const [toggleSuccessModal, setToggleSuccessModal] = useState(false);
     const [userEmail, setUserEmail] = useState('');
 
@@ -25,6 +25,25 @@ const UserEmailInput = (placeHolderText) => {
         }
     }
 
+    const toggleInputClass = () => {
+        if (isAnEmail === '') {
+            console.log("empty string")
+            return ''
+        } else if (isAnEmail) {
+            console.log("good email")
+            return 'good_email'
+        } else {
+            console.log("bad email")
+            return "bad_email"
+        }
+    }
+
+    const toggleErrorMessage = () => {
+        if (!isAnEmail && isAnEmail !== '') {
+            return <b><span className="email_err_msg">Valid email required</span></b>
+        }
+    }
+
     const buttonText = "Subscribe to monthly newsletter";
 
     return (
@@ -33,15 +52,13 @@ const UserEmailInput = (placeHolderText) => {
             <p className="label_errorMsg">
             <b><span className="email_label">Email address</span></b>
                     {
-                    !isAnEmail
-                    &&
-                    <b><span className="email_err_msg">Valid email required</span></b>
+                    toggleErrorMessage()
                     }
             </p>
 
                 
                 
-                <input className={isAnEmail ? "good_email" : "bad_email"} name="emailInput" placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
+                <input className={toggleInputClass()} name="emailInput" placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
                 <button className="subscribe_button" onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
                 {
                     toggleSuccessModal
