@@ -3,7 +3,7 @@ import { userEmailContext } from "../App";
 import SuccessModal from "./SuccessModal";
 
 const UserEmailInput = (placeHolderText) => {
-    const [isAnEmail, setIsAnEmail] = useState('');
+    const [isAnEmail, setIsAnEmail] = useState(false);
     const [toggleSuccessModal, setToggleSuccessModal] = useState(false);
     const [userEmail, setUserEmail] = useState('');
 
@@ -29,16 +29,18 @@ const UserEmailInput = (placeHolderText) => {
 
     return (
         <>
-            <ul className="input_label_err_msg">
+        <div className="input_label_errorMsg_button">
+            <p className="label_errorMsg">
+            <b><span className="email_label">Email address</span></b>
                     {
                     !isAnEmail
                     &&
-                    <li className="email_err_msg">Valid email required</li>
+                    <b><span className="email_err_msg">Valid email required</span></b>
                     }
-            </ul>
+            </p>
 
-                <div className="input_and_btn">
-                <b><label htmlFor="emailInput">Email address</label></b>
+                
+                
                 <input className={isAnEmail ? "good_email" : "bad_email"} name="emailInput" placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
                 <button className="subscribe_button" onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
                 {

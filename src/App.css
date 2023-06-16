@@ -42,16 +42,21 @@ body {
   margin: 0;
 }
 
-.input_label_err_msg {
+/* .input_label_err_msg {
   display: flex;
   list-style: none;
   margin: 0;
   padding-left: 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+/* } */ */
+
+.label_errorMsg {
+  /* display: flex; */
 }
 
 .email_err_msg {
   color: red;
+  font-size: 0.9rem !important;
 }
 
 button {
@@ -72,7 +77,6 @@ img {
 }
 
 .content_container {
-  font-size: var(--global-font-size);
   padding: 0 1.875rem 0 1.875rem;
   text-align: start;
 }
@@ -95,19 +99,13 @@ img {
   margin-top: 2rem;
 }
 
-input {
+input, input:focus {
   margin-top: 0.5rem;
   padding: .9rem;
   border-radius: .5rem;
   border-color: hsl(234, 7%, 73%);
   border-width: .06rem;
   border-style: solid;
-}
-
-label {
-  font-size: 0.9rem;
-  color: hsl(235, 18%, 26%);
-  margin: 0;
 }
 
 .subscribe_button {
@@ -124,6 +122,11 @@ label {
 
 .input::placeholder {
   color: hsl(234, 7%, 73%);
+}
+
+.label_and_error {
+  display: flex;
+  font-size: 0.9rem !important;
 }
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
