@@ -1,37 +1,22 @@
-html {
-  min-height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
 }
 
 .App {
   text-align: center;
-}
-
-body {
-  margin: 0px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
-  font-size: 1rem;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+  font-size: 1.5rem;
 }
 
 .good_email:focus {
@@ -56,40 +41,40 @@ button {
 }
 
  .mobile_banner {
-  width: 100%;
+  min-width: 100%;
 }
 
-.content_container {
+.form_container {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.content_container {
+/* .content_container {
   padding: 0 1.875rem 0 1.875rem;
   text-align: start;
-}
+} */
 
-.benefits_list {
+/* .benefits_list {
   list-style: none;
   padding: 0;
   margin: 0;
-}
+} */
 
-.benefits_list li {
+/* .benefits_list li {
   background: url('./Images/icon-list.svg') no-repeat;
   padding-left: 1.875rem;
   line-height: 1.4rem;
-}
+} */
 
-.input_and_btn {
+/* .input_and_btn {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   color: red;
-}
+} */
 
-input, input:focus {
+/* input, input:focus {
   margin-top: 0.5rem;
   padding: .9rem;
   border-radius: .5rem;
@@ -97,34 +82,26 @@ input, input:focus {
   border-width: .06rem;
   border-style: solid;
   outline: none;
-}
+} */
 
-.subscribe_button {
+/* .subscribe_button {
   margin-top: 1.2rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
   padding: .9rem;
   border-radius: .5rem;
-}
+} */
 
-.stay_updated_header {
-  margin-bottom: 0;
-} 
-
-.input::placeholder {
+/* .input::placeholder {
   color: hsl(234, 7%, 73%);
-}
+} */
 
-.label_errorMsg {
+/* .label_errorMsg {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem !important;
   margin: 0;
-}
-
-.successModal_container {
-  height: 100%;
-}
+} */
 
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)

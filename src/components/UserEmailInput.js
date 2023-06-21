@@ -45,7 +45,7 @@ const UserEmailInput = (placeHolderText) => {
 
     return (
         <>
-        <div className="input_label_errorMsg_button">
+        {/* // <div className="input_label_errorMsg_button"> */}
             <p className="label_errorMsg">
             <b><span className="email_label">Email address</span></b>
                     {
@@ -61,7 +61,7 @@ const UserEmailInput = (placeHolderText) => {
                     <SuccessModal userEmail= {userEmail} toggleSuccessModal= {toggleSuccessModal} setToggleSuccessModal= {setToggleSuccessModal}/>
                 }
             </div>
-        </div>  
+            {/* </div>   */}
         </>
     )
 }

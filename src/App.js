@@ -7,13 +7,11 @@ function App() {
  const placeHolderText = "email@company.com";
 
   return (
-    <div className="App">
-      <img className='mobile_banner' src={mobileBanner} alt='email banner'/>
-      
+  <div className="App">
       {/* <!-- Sign-up form start --> */}
-      <div className='content_container'>
+      <img className='mobile_banner' src={mobileBanner} alt='email banner'/>
+      <div className='form_container'>
         <h1 className="stay_updated_header">Stay updated!</h1>
-        <div>
 
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
@@ -22,22 +20,17 @@ function App() {
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-            
+          <UserEmailInput placeHolderText = {placeHolderText}/>     
       </div>
 
-
-
- 
-<UserEmailInput placeHolderText = {placeHolderText}/>
-
-{/* <!-- Sign-up form end --> */}
-<div className="attribution">
   
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">George Puryear</a>.
+
+  {/* <!-- Sign-up form end --> */}
+  <div className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">George Puryear</a>.
+  </div>
 </div>
-</div>
-    </div>
   );
 }
 
