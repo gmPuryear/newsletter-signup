@@ -27,13 +27,10 @@ const UserEmailInput = (placeHolderText) => {
 
     const toggleInputClass = () => {
         if (isAnEmail === '') {
-            console.log("empty string")
             return ''
         } else if (isAnEmail) {
-            console.log("good email")
             return 'good_email'
         } else {
-            console.log("bad email")
             return "bad_email"
         }
     }
@@ -55,9 +52,7 @@ const UserEmailInput = (placeHolderText) => {
                     toggleErrorMessage()
                     }
             </p>
-
-                
-                
+            <div className="input_and_btn">  
                 <input className={toggleInputClass()} name="emailInput" placeholder={placeHolderText.placeHolderText} type="email" onChange={handleChange}/>
                 <button className="subscribe_button" onClick={() => openSuccessModal()}>Subscribe to monthly newsletter</button>
                 {
@@ -66,6 +61,7 @@ const UserEmailInput = (placeHolderText) => {
                     <SuccessModal userEmail= {userEmail} toggleSuccessModal= {toggleSuccessModal} setToggleSuccessModal= {setToggleSuccessModal}/>
                 }
             </div>
+        </div>  
         </>
     )
 }

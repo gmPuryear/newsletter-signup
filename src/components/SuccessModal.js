@@ -3,12 +3,12 @@ import { useEffect } from "react";
 const SuccessModal = (props) => {
         const {
         userEmail,
-        toggleSuccessModal,
+        // toggleSuccessModal,
         setToggleSuccessModal
     } = props
 
     return (
-        <div>
+        <div className="successModal_container">
             {/* <!-- Success message start --> */}
             Thanks for subscribing!
 

@@ -31,12 +31,11 @@ function App() {
 <UserEmailInput placeHolderText = {placeHolderText}/>
 
 {/* <!-- Sign-up form end --> */}
-</div>
-
 <div className="attribution">
   
   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
   Coded by <a href="#">George Puryear</a>.
+</div>
 </div>
     </div>
   );
