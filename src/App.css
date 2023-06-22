@@ -4,19 +4,34 @@
   box-sizing: border-box;
 }
 
+html, body {
+  /* vv this makes 1rem = 10px. So it’s really easy to know what rem is to pixels
+  0.8rem = 8px
+  1.6rem = 16px
+  2.4rem = 24px
+  3.2rem = 32px
+  4rem = 40px  
+  and so on...*/
+  font-size: 62.5%; 
+}
+
 body {
   height: 100vh;
 }
 
 .App {
-  text-align: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-p {
-  font-size: 1.5rem;
+.form_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 1.8rem;
+  margin: 0px 25px 0px 25px;
 }
 
 .good_email:focus {
@@ -33,7 +48,7 @@ p {
 
 .email_err_msg {
   color: blue;
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 button {
@@ -44,10 +59,14 @@ button {
   min-width: 100%;
 }
 
-.form_container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+.benefits_list li {
+  background: url('./Images/icon-list.svg') no-repeat;
+  padding-left: 20px;
+  list-style: none;
+}
+
+li:nth-of-type(1) {
+  margin-bottom: 18px;
 }
 
 /* .content_container {
@@ -61,11 +80,7 @@ button {
   margin: 0;
 } */
 
-/* .benefits_list li {
-  background: url('./Images/icon-list.svg') no-repeat;
-  padding-left: 1.875rem;
-  line-height: 1.4rem;
-} */
+
 
 /* .input_and_btn {
   display: flex;
