@@ -53,16 +53,17 @@ body {
   background-color: hsl(138, 71%, 45%, 30%);
   color:hsl(138, 71%, 45%, 100%);
   outline: none;
+  margin-top: .8rem;
 }
 
 .bad_email:focus {
   outline: none;
   background-color: hsl(7, 73%, 88%);
-  margin: 0;
+  margin-top: .8rem;
 }
 
 .email_err_msg {
-  color: blue;
+  color: hsl(7, 87%, 79%);
 }
 
 button {
@@ -82,7 +83,7 @@ li:nth-of-type(3) {
 }
 
 .label_errorMsg {
-  margin-top: 2.75rem
+  margin-top: 3rem
 }
 
 .email_label {
@@ -96,11 +97,10 @@ li:nth-of-type(3) {
 .input_and_btn {
   display: flex;
   flex-direction: column;
-  /* color: red; */
 }
 
 input, input:focus {
-  margin-top: 0.5rem;
+  margin-top: .8rem;
   padding: .9rem;
   border-radius: .5rem;
   border-color: hsl(234, 7%, 73%);
