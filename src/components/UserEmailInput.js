@@ -44,8 +44,8 @@ const UserEmailInput = (placeHolderText) => {
     const buttonText = "Subscribe to monthly newsletter";
 
     return (
-        <>
-        {/* // <div className="input_label_errorMsg_button"> */}
+        <div className="label_input_btn_container">
+            {/* // <div className="input_label_errorMsg_button"> */}
             <p className="label_errorMsg">
             <b><span className="email_label">Email address</span></b>
                     {
@@ -61,8 +61,7 @@ const UserEmailInput = (placeHolderText) => {
                     <SuccessModal userEmail= {userEmail} toggleSuccessModal= {toggleSuccessModal} setToggleSuccessModal= {setToggleSuccessModal}/>
                 }
             </div>
-            {/* </div>   */}
-        </>
+        </div>
     )
 }
 export default UserEmailInput;

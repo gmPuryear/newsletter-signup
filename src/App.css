@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../public/fonts/Roboto-Regular.ttf);
+}
+
 html, body {
   /* vv this makes 1rem = 10px. So it’s really easy to know what rem is to pixels
   0.8rem = 8px
@@ -13,7 +18,23 @@ html, body {
   4rem = 40px  
   and so on...*/
   font-size: 62.5%; 
+  font-family: Roboto;
 }
+
+
+
+/* .Roboto {
+  font-family: Roboto;
+} */
+
+@font-face {
+  font-family: Roboto_Bold;
+  src: url(../public/fonts/Roboto-Bold.ttf);
+}
+
+/* .Roboto_Bold {
+  font-family: Roboto_Bold;
+} */
 
 body {
   height: 100vh;
@@ -83,11 +104,8 @@ li:nth-of-type(3) {
 }
 
 .label_errorMsg {
-  margin-top: 3rem
-}
-
-.email_label {
-  font-size: 1rem;
+  margin-top: 3rem;
+  font-family: Roboto_Bold;
 }
 
 .input::placeholder {
@@ -97,6 +115,7 @@ li:nth-of-type(3) {
 .input_and_btn {
   display: flex;
   flex-direction: column;
+  row-gap: 2rem;
 }
 
 input, input:focus {
@@ -110,7 +129,6 @@ input, input:focus {
 }
 
 .subscribe_button {
-  margin-top: 1.2rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
   padding: .9rem;
@@ -120,7 +138,12 @@ input, input:focus {
 .label_errorMsg {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem !important;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.label_input_btn_container {
+  margin-top: 4rem;
 }
 
 
