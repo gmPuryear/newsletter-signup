@@ -31,7 +31,22 @@ body {
   flex-direction: column;
   justify-content: start;
   font-size: 1.8rem;
-  margin: 0px 25px 0px 25px;
+  margin: 2.5rem 2.5rem 0 2.5rem;
+}
+
+.intro_to_list {
+  margin-top: 1.8rem;
+}
+
+.benefits_list {
+  margin-top: 2.5rem;
+}
+
+.benefits_list li {
+  background: url('./Images/icon-list.svg') no-repeat;
+  padding-left: 3rem;
+  list-style: none;
+  line-height: 2.5rem;
 }
 
 .good_email:focus {
@@ -48,7 +63,6 @@ body {
 
 .email_err_msg {
   color: blue;
-  /* font-size: 0.9rem; */
 }
 
 button {
@@ -59,37 +73,33 @@ button {
   min-width: 100%;
 }
 
-.benefits_list li {
-  background: url('./Images/icon-list.svg') no-repeat;
-  padding-left: 20px;
-  list-style: none;
+li:nth-of-type(2) {
+  margin-top: 1.8rem;
 }
 
-li:nth-of-type(1) {
-  margin-bottom: 18px;
+li:nth-of-type(3) {
+  margin-top: 1.8rem;
 }
 
-/* .content_container {
-  padding: 0 1.875rem 0 1.875rem;
-  text-align: start;
-} */
+.label_errorMsg {
+  margin-top: 2.75rem
+}
 
-/* .benefits_list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
+.email_label {
+  font-size: 1rem;
+}
 
+.input::placeholder {
+  color: hsl(234, 7%, 73%);
+}
 
-
-/* .input_and_btn {
+.input_and_btn {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  color: red;
-} */
+  /* color: red; */
+}
 
-/* input, input:focus {
+input, input:focus {
   margin-top: 0.5rem;
   padding: .9rem;
   border-radius: .5rem;
@@ -97,26 +107,21 @@ li:nth-of-type(1) {
   border-width: .06rem;
   border-style: solid;
   outline: none;
-} */
+}
 
-/* .subscribe_button {
+.subscribe_button {
   margin-top: 1.2rem;
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
   padding: .9rem;
   border-radius: .5rem;
-} */
+}
 
-/* .input::placeholder {
-  color: hsl(234, 7%, 73%);
-} */
-
-/* .label_errorMsg {
+.label_errorMsg {
   display: flex;
   justify-content: space-between;
   font-size: 0.9rem !important;
-  margin: 0;
-} */
+}
 
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
