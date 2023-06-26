@@ -103,10 +103,15 @@ li:nth-of-type(3) {
   margin-top: 1.8rem;
 }
 
+input {
+  height: 5rem;
+}
+
 .label_errorMsg {
   margin-top: 3rem;
   font-family: Roboto_Bold;
 }
+
 
 .input::placeholder {
   color: hsl(234, 7%, 73%);
@@ -133,6 +138,7 @@ input, input:focus {
   background-color: hsl(235, 18%, 26%);
   padding: .9rem;
   border-radius: .5rem;
+  height: 5rem;
 }
 
 .label_errorMsg {
@@ -144,6 +150,17 @@ input, input:focus {
 
 .label_input_btn_container {
   margin-top: 4rem;
+}
+
+/* -----------Success Modal--------- */
+
+.successModal_container {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid red;
 }
 
 
