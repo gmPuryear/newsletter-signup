@@ -104,7 +104,7 @@ li:nth-of-type(3) {
 }
 
 input {
-  height: 5rem;
+  height: 5.5rem;
 }
 
 .label_errorMsg {
@@ -126,7 +126,7 @@ input {
 input, input:focus {
   margin-top: .8rem;
   padding: .9rem;
-  border-radius: .5rem;
+  border-radius: .75rem;
   border-color: hsl(234, 7%, 73%);
   border-width: .06rem;
   border-style: solid;
@@ -137,8 +137,8 @@ input, input:focus {
   color: hsl(0, 0%, 100%);
   background-color: hsl(235, 18%, 26%);
   padding: .9rem;
-  border-radius: .5rem;
-  height: 5rem;
+  border-radius: .75rem;
+  height: 5.5rem;
 }
 
 .label_errorMsg {
@@ -152,6 +152,10 @@ input, input:focus {
   margin-top: 4rem;
 }
 
+.attribution {
+  margin-top: .5rem;
+}
+
 /* -----------Success Modal--------- */
 
 .successModal_container {
@@ -160,9 +164,42 @@ input, input:focus {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid red;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+.success_Modal_top_content {
+  position: absolute;
+  transform: translateY(-40%);
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.5rem;
+  row-gap: 3.5rem;
+}
+
+.dismiss_btn_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.dismiss_btn {
+  height: 5.5rem;
+  border-radius: .75rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(235, 18%, 26%);
+  border: none;
+}
+
+.user_email {
+  font-family: Roboto_Bold;
+}
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
 Charcoal Grey: hsl(235, 18%, 26%)
