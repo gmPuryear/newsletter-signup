@@ -8,7 +8,6 @@ const UserEmailInput = (placeHolderText) => {
     const [userEmail, setUserEmail] = useState('');
 
     const handleChange = (e) => {
-        console.log(isAnEmail);
         const email = e.target.value;
         isInputEmail(email);
         setUserEmail(email);

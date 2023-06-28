@@ -97,6 +97,7 @@ li:nth-of-type(3) {
 
 input {
   height: 5.5rem;
+  font-size: 1.5rem;
 }
 
 .label_errorMsg {
