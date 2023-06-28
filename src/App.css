@@ -195,17 +195,35 @@ input, input:focus {
 }
 
 /* ----- Tablet Styles ----- */
-/* @media (min-width: 800px) {
+@media (min-width: 800px) {
   .form_container {
     height: 100%;
     display: flex;
     align-content: end;
     flex-direction: column;
     justify-content: start;
-    font-size: 1.8rem;
+    font-size: 3rem;
     margin: 2.5rem 2.5rem 0 2.5rem;
   }
-} */
+
+  .subscribe_button {
+    height: 8rem;
+    font-size: 2rem;
+  }
+
+  input {
+      height: 8rem;
+      font-size: 2.5rem;
+    }
+
+    .email_label {
+      font-size: 2rem;
+    }
+
+    .attribution {
+      font-size: 2rem;
+    }
+}
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
 Charcoal Grey: hsl(235, 18%, 26%)
