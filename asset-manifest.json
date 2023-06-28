@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7653014e.css",
-    "main.js": "/static/js/main.84fb1fcf.js",
-    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
-    "static/media/Roboto-Bold.ttf": "/static/media/Roboto-Bold.35eab922fdbe4b5324d4.ttf",
-    "static/media/illustration-sign-up-mobile.svg": "/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
-    "static/media/icon-success.svg": "/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
-    "index.html": "/index.html",
-    "static/media/icon-list.svg": "/static/media/icon-list.5e317c030bb9f11a3343.svg",
-    "main.7653014e.css.map": "/static/css/main.7653014e.css.map",
-    "main.84fb1fcf.js.map": "/static/js/main.84fb1fcf.js.map"
+    "main.css": "/newsletter-signup/static/css/main.2d7c1b3a.css",
+    "main.js": "/newsletter-signup/static/js/main.aeb57a28.js",
+    "static/media/Roboto-Regular.ttf": "/newsletter-signup/static/media/Roboto-Regular.160d7a6ac26376e5e977.ttf",
+    "static/media/Roboto-Bold.ttf": "/newsletter-signup/static/media/Roboto-Bold.35eab922fdbe4b5324d4.ttf",
+    "static/media/illustration-sign-up-mobile.svg": "/newsletter-signup/static/media/illustration-sign-up-mobile.3f6f1c6d3e48045cb31a0cae1ae11999.svg",
+    "index.html": "/newsletter-signup/index.html",
+    "static/media/icon-success.svg": "/newsletter-signup/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
+    "static/media/icon-list.svg": "/newsletter-signup/static/media/icon-list.5e317c030bb9f11a3343.svg",
+    "main.2d7c1b3a.css.map": "/newsletter-signup/static/css/main.2d7c1b3a.css.map",
+    "main.aeb57a28.js.map": "/newsletter-signup/static/js/main.aeb57a28.js.map"
   },
   "entrypoints": [
-    "static/css/main.7653014e.css",
-    "static/js/main.84fb1fcf.js"
+    "static/css/main.2d7c1b3a.css",
+    "static/js/main.aeb57a28.js"
   ]
 }
