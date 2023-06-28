@@ -21,20 +21,10 @@ html, body {
   font-family: Roboto;
 }
 
-
-
-/* .Roboto {
-  font-family: Roboto;
-} */
-
 @font-face {
   font-family: Roboto_Bold;
   src: url(../public/fonts/Roboto-Bold.ttf);
 }
-
-/* .Roboto_Bold {
-  font-family: Roboto_Bold;
-} */
 
 body {
   height: 100vh;
@@ -45,6 +35,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* ----- Mobile Styles ----- */
 
 .form_container {
   height: 100%;
@@ -120,7 +112,7 @@ input {
 .input_and_btn {
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 2.5rem;
 }
 
 input, input:focus {
@@ -156,7 +148,7 @@ input, input:focus {
   margin-top: .5rem;
 }
 
-/* -----------Success Modal--------- */
+/* -----------Mobile Success Modal--------- */
 
 .successModal_container {
   position: absolute;
@@ -200,6 +192,19 @@ input, input:focus {
 .user_email {
   font-family: Roboto_Bold;
 }
+
+/* ----- Tablet Styles ----- */
+/* @media (min-width: 800px) {
+  .form_container {
+    height: 100%;
+    display: flex;
+    align-content: end;
+    flex-direction: column;
+    justify-content: start;
+    font-size: 1.8rem;
+    margin: 2.5rem 2.5rem 0 2.5rem;
+  }
+} */
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
 Charcoal Grey: hsl(235, 18%, 26%)
