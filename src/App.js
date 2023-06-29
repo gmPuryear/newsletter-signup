@@ -7,9 +7,10 @@ function App() {
 
   return (
   <div className="App">
+    <div className='form_container'>
       <img className='mobile_banner' src={mobileBanner} alt='email banner'/>
       
-      <div className='form_container'>
+      
         <h1 className="stay_updated_header">Stay updated!</h1>
 
           <p className='intro_to_list'>Join 60,000+ product managers receiving monthly updates on:</p>
