@@ -200,9 +200,8 @@ input, input:focus {
 }
 
 /* ----- Tablet Styles ----- */
-@media (min-width: 800px) {
+@media (width >= 800px) {
   .form_container {
-    height: 100%;
     display: flex;
     align-content: end;
     flex-direction: column;
@@ -236,14 +235,20 @@ input, input:focus {
 }
 
 /* ----- Desktops and Laptop Styles ----- */
-@media  (min-width: 1440px) {
+@media  (width >= 1440px) {
   body {
     background-color: hsl(234, 29%, 20%);
+    display: grid;
+    place-items: center;
+    
   }
 
-  .form_container {
-    height: 50vh;
-    width: 50vw;
+  .container {
+    border: 2px solid red;
+    /* max-width: 8.2rem; */
+    /* max-height: 10rem; */
+    /* height: 50vh; */
+    /* width: 50vw; */
     /* display: flex; */
     /* justify-content: start; */
     /* font-size: 1.8rem; */
