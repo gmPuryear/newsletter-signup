@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className='container'>
-      <img className='mobile_banner' src={mobileBanner} alt='email banner'/>
+      <img className='banner' src={mobileBanner} alt='email banner'/>
       
       <div className='form_container'>
         <h1 className="stay_updated_header">Stay updated!</h1>

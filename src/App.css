@@ -87,7 +87,7 @@ button {
   cursor: pointer;
 }
 
- .mobile_banner {
+ .banner {
   min-width: 100%;
 }
 
@@ -234,25 +234,34 @@ input, input:focus {
 }
 
 /* ----- Desktops and Laptop Styles ----- */
-@media  (width >= 1440px) {
-  /* body {
-    background-color: hsl(234, 29%, 20%);
-    display: grid;
-    place-items: center;
-    
-  } */
-
-  .container {
-    min-width: 8.2rem;
-    max-width: 80rem;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: start; */
-    /* font-size: 1.8rem; */
-    /* margin: 2.5rem 2.5rem 0 2.5rem; */
+@media  (width >= 1366px) {
+  html, body {
+    height: 100%;
   }
 
-  
+  .root {
+    height: 100%;
+  }
+
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: red solid 2px;
+    text-align: center;
+    width: 75%;
+    height: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: auto;
+    margin: 0px;
+  }
+
+  .form_container {
+    height: 100%;
+
+  }
 }
 
 /* Dark Slate Grey: hsl(234, 29%, 20%)
