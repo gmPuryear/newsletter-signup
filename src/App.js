@@ -1,6 +1,7 @@
 import './App.css';
 import UserEmailInput from './components/UserEmailInput';
 import mobileBanner from './Images/illustration-sign-up-mobile.svg'
+import desktopBanner from './Images/illustration-sign-up-desktop.svg'
 
 function App() {
  const placeHolderText = "email@company.com";
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className='container'>
       <img className='banner' src={mobileBanner} alt='email banner'/>
+      <img className='banner_desktop' src={desktopBanner} alt='desktop banner'/>
       
       <div className='form_container'>
         <h1 className="stay_updated_header">Stay updated!</h1>
